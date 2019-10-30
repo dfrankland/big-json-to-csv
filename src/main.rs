@@ -5,7 +5,7 @@ use std::{fs::File, io::BufReader, path::PathBuf};
 use structopt::StructOpt;
 
 #[derive(StructOpt, Debug)]
-#[structopt(name = "big-json-to-csv", about = "What big file?")]
+#[structopt(name = "big-json-to-csv")]
 struct CliOpt {
     /// Input JSON file
     #[structopt(short, long, parse(from_os_str))]
